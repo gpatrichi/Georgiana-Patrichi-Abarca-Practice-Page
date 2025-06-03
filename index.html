@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+
+ <title>Cooking Mama</title>
+  
+
+<style>
+    body {
+      background-color: lavender;
+      font-family: Georgia, Arial, serif;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+   
+    h3, h4 {
+      text-align: left;
+    }
+
+    h3 {
+    text-decoration-line: underline; color:blue
+    }
+
+
+   
+    
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    table {
+      margin: auto;
+      width: 70%;
+    }
+
+    .sr-only {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <a href="#ingredients">Skip to Ingredients</a> |
+  <a href="#directions">Skip to Directions</a> |
+  <a href="#contact">Skip to Contact</a>
+
+  <br>
+  <br>
+
+  <form action="/action_page.php" role="search">
+    <label for="searchpage">Search page for:</label>
+    <input type="search" id="searchpage" name="searchpage">
+    <input type="submit" value="Search">
+  </form>
+
+  <header>
+    <h1 style="color: yellow; background-color: blue; text-shadow: 1px 1px red;">Georgiana's Romanian Meatball Soup</h1>
+    <h2 style="color: darkblue;">Traditional Recipe with a Twist</h2>
+      <br>
+
+  <img src="meatball soup in bowl with hot pepper and bread.jpg" alt="meatball soup in bowl with hot pepper and bread" width="333" height="333" style="display: block; margin-left: auto; margin-right: auto;" >
+
+  <br>
+  <br>
+    </header>
+
+    <br>
+    <br>
+
+  <main>
+    <section aria-labelledby="history-heading">
+      <h3 id="history-heading">The History of the Soup</h3>
+      <p>This soup is very yummy. My mom used to make it every summer when I was a kid. It's hydrating and full of veggies and protein, which makes it a <em>very healthy soup</em>.</p>
+    </section>
+
+
+    <br>
+    <br>
+
+
+    <section id="ingredients" aria-labelledby="ingredients-heading">
+      <h3 id="ingredients-heading">List of Ingredients</h3>
+
+      <h4>Soup Base:</h4>
+      <ul>
+        <li><input type="checkbox" id="carrots"><label for="carrots"> 3 carrots</label></li>
+        <li><input type="checkbox" id="potato"><label for="potato"> 1 potato (sweet potato is also OK)</label></li>
+        <li><input type="checkbox" id="onion"><label for="onion"> 1 large onion</label></li>
+        <li><input type="checkbox" id="parsnip"><label for="parsnip"> 1/2 parsnip root</label></li>
+        <li><input type="checkbox" id="celery"><label for="celery"> 1/2 celery root</label></li>
+        <li><input type="checkbox" id="bellpepper"><label for="bellpepper"> 1 bell pepper (any color)</label></li>
+        <li><input type="checkbox" id="lovage"><label for="lovage"> 1/2 bunch lovage</label></li>
+        <li><input type="checkbox" id="salt1"><label for="salt1"> Salt to taste</label></li>
+        <li><input type="checkbox" id="pepper1"><label for="pepper1"> Black pepper to taste</label></li>
+        <li><input type="checkbox" id="lemon"><label for="lemon"> Juice from 2 lemons</label></li>
+      </ul>
+
+      <h4>Meatballs:</h4>
+      <ul>
+        <li><input type="checkbox" id="turkey"><label for="turkey"> 1 lb ground turkey</label></li>
+        <li><input type="checkbox" id="rice"><label for="rice"> 2 tbsp white rice</label></li>
+        <li><input type="checkbox" id="egg"><label for="egg"> 1 large egg</label></li>
+        <li><input type="checkbox" id="breadcrumbs"><label for="breadcrumbs"> 1/4 cup bread crumbs</label></li>
+        <li><input type="checkbox" id="parsley"><label for="parsley"> 1/2 bunch parsley</label></li>
+        <li><input type="checkbox" id="dill"><label for="dill"> 1/2 bunch dill</label></li>
+        <li><input type="checkbox" id="paprika"><label for="paprika"> 1 tsp paprika</label></li>
+        <li><input type="checkbox" id="salt2"><label for="salt2"> Salt to taste</label></li>
+        <li><input type="checkbox" id="pepper2"><label for="pepper2"> Black pepper to taste</label></li>
+      </ul>
+    </section>
+
+    <br>
+    <br>
+
+    
+    <section id="directions" aria-labelledby="directions-heading">
+      <h3 id="directions-heading">Directions</h3>
+
+      <h4>Steps for Prepping the Veggies:</h4>
+      <ol>
+        <li>Wash, clean, peel, and chop the vegetables (a food processor can help).</li>
+        <li>Add all the veggies to a large pot.</li>
+        <li>Add the lovage and black pepper.</li>
+        <li>Add 3 liters of water to the pot.</li>
+        <li>Set stove to High and bring to a boil.</li>
+      </ol>
+
+      <h4>Steps for Prepping the Meatballs:</h4>
+      <ol>
+        <li>Finely dice the parsley and dill.</li>
+        <li>Mix turkey, bread crumbs, rice, egg, herbs, paprika, salt, and pepper in a large bowl.</li>
+        <li>Mix well by hand or with gloves.</li>
+        <li>Form 2-inch meatballs (a melon scooper can help).</li>
+        <li>Gently place meatballs in the boiling soup one by one.</li>
+      </ol>
+
+      <h4>Steps for Cooking:</h4>
+      <ol>
+        <li>Allow all ingredients to come to a boil.</li>
+        <li>Reduce heat to medium-low and cover with a lid.</li>
+        <li>Cook for about 30 minutes, stirring occasionally.</li>
+        <li>After cooking, add salt and lemon juice and stir well.</li>
+        <li>Let sit for 10 minutes. Serve with yogurt, hot pepper, and bread.</li>
+      </ol>
+      <p>Enjoy!</p> 
+
+      <br>
+
+      <img src="https://www.wannapik.com/media/W1siZiIsIjIwMTYvMDgvMjIvNXQ4cnJpb214M191MGZpZzV1Ym1fdmMwMDI2MDEucG5nIl1d/d5f7aec4d682c1df/u0fig5ubm_vc002601.png" alt="chef winking giving chef's kiss" style="width:500px;height:333px;margin-left: 0; margin-right: auto;">
+
+      <br>
+    </section>
+
+    <section aria-labelledby="favorites-heading">
+      <h2 id="favorites-heading">My Family's Favorite Seasonal Recipes</h2>
+    <table style="width:70%" align="center">
+      <caption hidden>My Family</caption>
+      <tr style="background-color: aqua;">
+        <th scope="col">Season</th>
+        <th scope="col">Family Member</th>
+        <th scope="col" colspan="2">Favorite Recipes</th>
+      </tr>
+      <tr style="background-color:palegreen">
+        <td scope="row">Spring</td>
+        <td>Mom</td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Avocado toast</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Spinach pie</a></td>
+      </tr>
+      <tr style="background-color:lightpink">
+        <td scope="row">Summer</td>
+        <td>Me</td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Watermelon salad</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Grilled trout</a></td>
+      </tr>
+      <tr style="background-color:burlywood">
+        <td scope="row">Fall</td>
+        <td>Sister</td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Stuffed peppers</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/chicken">Chicken stew</a></td>
+      </tr>
+      <tr style="background-color:lightgray">
+        <td scope="row">Winter</td>
+        <td>Dad</td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/pasta">Pasta pudding</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Pork chops</a></td>
+      </tr>
+    </table>
+    </section>
+
+    <br>
+    <br>
+
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact</h3>
+      <p>For questions or comments, contact me at <a href="mailto:gpatrich@gmu.edu">gpatrich@gmu.edu</a>.</p>
+
+      
+      <form action="https://www.instagram.com/">
+      <button aria-label="Follow me on Instagram" type="submit">Follow me on Instagram</button>
+      </form>
+
+      <br>
+
+      <form action="/action_page.php">
+        <label for="emailaddress">Email address:</label>
+        <input type="email" id="emailaddress" name="emailaddress">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe for delicious updates</label>
+      </form>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <aside aria-labelledby="poll-heading" style="text-align: left;">
+      <h4 id="poll-heading">Did you like this recipe?</h4>
+      <form action="/submit_poll" method="post">
+        <label><input type="radio" name="vote" value="Yes"> Yes</label><br>
+        <br>
+        <label><input type="radio" name="vote" value="No"> No</label><br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="YesNoBarGraph.png" alt="Bar chart showing votes: Yes and No" width="500" height="300" style="margin-left: 0; margin-right: auto;">
+        <figcaption style="text-align: left;"><a href="Complex image.html">Figure 1: Poll results to question above</a></figcaption>
+      </figure>
+    </aside>
+  </main>
+</body>
+</html>
