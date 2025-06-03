@@ -259,11 +259,13 @@ function loseFocus() {
       <aside aria-labelledby="poll-heading" style="text-align: left;">
       <h4 id="poll-heading">Did you like this recipe?</h4>
       <form action="/submit_poll" method="post">
-        <fieldset><label><input type="radio" name="vote" value="Yes"> Yes</label>
+        <legend><fieldset><label><input type="radio" name="vote" value="Yes"> Yes</label>
           
           <br>
         <br>
-        <label><input type="radio" name="vote" value="No"> No</label><br></fieldset>
+        <label><input type="radio" name="vote" value="No"> No</label><br>
+      </fieldset>
+      </legend>
         <br>
         <button type="submit">Submit</button>
       </form>
