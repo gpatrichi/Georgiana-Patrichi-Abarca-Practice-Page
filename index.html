@@ -50,6 +50,12 @@
       overflow: hidden;
     }
 
+
+
+    a:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
   </style>
 
 </head>
@@ -88,7 +94,7 @@
   <main>
     <section aria-labelledby="history-heading">
       <h3 id="history-heading">The History of the Soup</h3>
-      <p>This soup is very yummy. My mom used to make it every summer when I was a kid. It's hydrating and full of veggies and protein, which makes it a <em>very healthy soup</em>.</p>
+      <p style="font-family: cursive;">This soup is very yummy. My mom used to make it every summer when I was a kid. It's hydrating and full of veggies and protein, which makes it a <em>very healthy soup</em>.</p>
     </section>
 
 
@@ -160,7 +166,7 @@
         <li>After cooking, add salt and lemon juice and stir well.</li>
         <li>Let sit for 10 minutes. Serve with yogurt, hot pepper, and bread.</li>
       </ol>
-      <p>Enjoy!</p> 
+      <p style="font-family: 'Courier New', Courier, monospace;"><strong>Enjoy</strong>!</p> 
 
       <br>
 
@@ -181,26 +187,27 @@
       <tr style="background-color:palegreen">
         <td scope="row">Spring</td>
         <td>Mom</td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Avocado toast</a></td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Spinach pie</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food" target="_blank">Avocado toast</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food" target="_blank">Spinach pie</a></td>
       </tr>
       <tr style="background-color:lightpink">
         <td scope="row">Summer</td>
         <td>Me</td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Watermelon salad</a></td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food">Grilled trout</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food" target="_blank">Watermelon salad</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/fit-food" target="_blank">Grilled trout</a></td>
       </tr>
       <tr style="background-color:burlywood">
         <td scope="row">Fall</td>
         <td>Sister</td>
         <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Stuffed peppers</a></td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/chicken">Chicken stew</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/chicken" target="_blank">Chicken stew</a></td>
       </tr>
       <tr style="background-color:lightgray">
         <td scope="row">Winter</td>
         <td>Dad</td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/pasta">Pasta pudding</a></td>
-        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food">Pork chops</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/pasta" target="_blank">Pasta pudding</a></td>
+        <td><a href="https://www.gordonramsay.com/gr/recipes/category/comfort-food" target="_blank">Pork chops</a></td>
+
       </tr>
     </table>
     </section>
@@ -222,15 +229,42 @@
 
       <form action="/action_page.php">
         <label for="emailaddress">Email address:</label>
-        <input type="email" id="emailaddress" name="emailaddress">
+        <input type="email" id="emailaddress" name="emailaddress" value="Enter email address here" onclick="getFocus()">
+
         <input type="checkbox" id="subscribe" name="subscribe">
         <label for="subscribe">Subscribe for delicious updates</label>
+
+        <button type="button" onclick="getFocus()">Get focus</button>
+        <button type="button" onclick="loseFocus()">Lose focus</button>
+
+<script>
+function getFocus() {
+  document.getElementById("emailaddress").focus();
+}
+
+function loseFocus() {
+  document.getElementById("emailaddress").blur();
+}
+</script>
+
+
       </form>
     </section>
 
     <br>
     <br>
     <br>
+
+
+    
+
+
+
+
+
+
+
+
 
     <aside aria-labelledby="poll-heading" style="text-align: left;">
       <h4 id="poll-heading">Did you like this recipe?</h4>
