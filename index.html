@@ -232,8 +232,8 @@
       <br>
 
       <form action="/action_page.php">
-        <label for="emailaddress">Email address:</label>
-        <input type="email" id="emailaddress" name="emailaddress" value="Enter email address here" onclick="getFocus()">
+        <label for="emailaddress" aria-label="emailaddress">Email address:</label>
+        <input type="email" id="emailaddress" aria-label="enteremailaddresshere" name="emailaddress" onclick="getFocus()">
 
         <input type="checkbox" id="subscribe" name="subscribe">
         <label for="subscribe">Subscribe for delicious updates</label>
@@ -261,14 +261,14 @@ function loseFocus() {
 
 
       <aside aria-labelledby="poll-heading" style="text-align: left;">
-      <h4 id="poll-heading">Did you like this recipe?</h4>
+      <h4 id="poll-heading">Please help us improve our content!</h4>
       <form action="/submit_poll" method="post">
         <fieldset>
-          <legend> Respond</legend>
-          <label><input type="radio" name="vote" value="Yes"> Yes</label>
-          
+          <legend><strong>Did you like this recipe?</strong></legend>
           <br>
-        <br>
+          <label><input type="radio" name="vote" value="Yes"> Yes</label>
+          <br>
+          <br>
         <label><input type="radio" name="vote" value="No"> No</label><br>
       </fieldset>
      
